@@ -1,0 +1,75 @@
+<div class="calculator">
+    <input type="text" class="calculator-screen" [value]="display" disabled />
+  
+    <div class="calculator-keys">
+        <div class="row" style="width: 125px;">
+            <div class="col-md-9">
+           <button (click)="clear()"class="operator" style="width: 212px;">C</button>
+            </div>
+            <div class="col-md-3"><button (click)="compute()" style="    margin-left: 15rem;
+">=</button></div>
+        </div>
+        <div class="row" style="margin-top: 24px;">
+            <div class="col-md-9" style="z-index: 1;">
+                <div class="row"  style="width: 149%;">
+                    <div class="col-md-4">
+                        <button (click)="appendNumber('7')">7</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button (click)="appendNumber('8')">8</button> 
+                    </div>
+                    <div class="col-md-4">
+                        <button (click)="appendNumber('9')">9</button> 
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 16px;width: 149%;">
+                    <div class="col-md-4">
+                        <button (click)="appendNumber('4')">4</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button (click)="appendNumber('5')">5</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button (click)="appendNumber('6')">6</button>
+                    </div>
+                </div>
+        
+                <div class="row" style="margin-top: 16px;width: 149%;">
+                    <div class="col-md-4">
+                        <button (click)="appendNumber('1')">1</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button (click)="appendNumber('2')">2</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button (click)="appendNumber('3')">3</button>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 16px;width: 149%;">
+                    <div class="col-md-6">
+                        <button (click)="appendNumber('0')" style="width: 212px !important;">0</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button (click)="appendNumber('.')" style="position: relative;left:56px
+                        ">.</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" style="z-index: 0;">
+               
+                
+    <button (click)="chooseOperation('/')" style=" position: relative;
+    left: 91px;">÷</button>
+
+      <button (click)="chooseOperation('*')" style=" position: relative;
+      left: 91px;margin-top: 16px;">×</button>
+             
+      <button (click)="chooseOperation('-')" style=" position: relative;
+      left: 91px;margin-top: 16px;">−</button>
+
+      <button (click)="chooseOperation('+')" style=" position: relative;
+      left: 91px;margin-top: 16px;">+</button>
+            </div>
+        </div>
+    </div>
+  </div>
